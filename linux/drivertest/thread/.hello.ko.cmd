@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/桌面/selflearn/learngit/drivertest/thread/hello.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.13.0-32-generic/scripts/module-common.lds --build-id  -o /home/ubuntu/桌面/selflearn/learngit/drivertest/thread/hello.ko /home/ubuntu/桌面/selflearn/learngit/drivertest/thread/hello.o /home/ubuntu/桌面/selflearn/learngit/drivertest/thread/hello.mod.o

@@ -1,0 +1,48 @@
+/*****************************************/
+/*
+ yinyapeng create this file for list learn 2016/05/16
+
+*/
+
+#include"stdio.h"
+
+struct list_head {
+	struct list_head *next;
+	struct list_head *pre;
+};
+
+typedef struct Node{
+	int data;
+	struct Node *pre;
+	struct Node *next;
+}NODE,*PNODE;	
+int main(void)
+{
+	PNODE pHead = NULL;
+	pHead = create_list();
+	traverse_list(pHead);
+
+	return 0;
+}
+
+PNODE create_list()
+{
+	PNODE pHead = NULL;
+	int length;
+	int i;
+	int val;
+	
+	printf("pleare input the length of list you want \n");
+	scanf("%d",&length);
+	for (i = 0; i < length;i++)
+	{
+		pHead = (PNODE)malloc(sizeof(NODE));
+		
+		printf("please input the data \n");
+		scanf("%d",&val);
+		pHead->data = val;		
+		
+		
+	}
+	
+}
